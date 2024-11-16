@@ -1,0 +1,52 @@
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "3a 3b 3c"
+    "2a 2b 2c"
+    "1a 1b 1c";
+    height: 800px;
+    width: 800px;
+    margin: auto;
+    border: 2px solid black;
+    border-color: black;
+    font-family: "Inter", sans-serif;
+    /* overflow: hidden; */
+}
+body > div {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  font-weight: light;
+}
+div:nth-child(1) {
+    grid-area: 3a;
+}
+div:nth-child(2) {
+    grid-area: 3b;
+}
+div:nth-child(3) {
+    grid-area: 3c;
+}
+div:nth-child(4) {
+    grid-area: 2a;
+}
+div:nth-child(5) {
+    grid-area: 2b;
+}
+div:nth-child(6) {
+    grid-area: 2c;
+}
+div:nth-child(7) {
+    grid-area: 1a;
+}
+div:nth-child(8) {
+    grid-area: 1b;
+}
+div:nth-child(9) {
+    grid-area: 1c;
+}
